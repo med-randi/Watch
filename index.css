@@ -1,0 +1,121 @@
+body{
+    margin:0px;
+    padding: 0px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mboxe{
+    width: 500px;
+    height:400px;
+    border: solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 15px;
+    transform-style:preserve-3d;
+    position: relative;
+}
+
+
+
+.box{
+    width: 79%;
+    height:150px;
+    border: 1px solid;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    color: whitesmoke;
+    position: relative;
+  
+}
+
+.box a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+#box1{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: perspective(500px) rotateY(45deg)  ;
+    border-radius:10px;
+    background:linear-gradient( to right, orange,tomato);
+    
+}
+
+#box3{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: perspective(500px) rotateY(45deg) ;
+    border-radius: 10px;
+    background:linear-gradient( to right, orange,tomato);
+}
+#box2{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: perspective(500px) rotateY(-45deg) ;
+    border-radius: 10px;
+    background:linear-gradient( to left,orange,tomato);
+}
+#box4{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: perspective(500px) rotateY(-45deg) ;
+    border-radius: 10px;
+    background:linear-gradient( to left,orange,tomato);
+}
+
+#box2:hover, #box4:hover {
+    transform: perspective(300px) rotateY(-45deg) ;
+    transition:all 0.7s;
+}
+
+
+#box1:hover, #box3:hover {
+    transform: perspective(300px) rotateY(45deg) ;
+    transition:all 0.7s;
+}
+
+
+
+
+@media screen and (max-width:576px ) {
+
+    #box1,#box3{
+        transform: perspective(350px) rotateY(45deg) ;
+    
+     font-size: 35px;
+    }
+    
+    #box2,#box4{
+        transform: perspective(350px) rotateY(-45deg) ;
+    
+     font-size: 35px;
+    }
+
+}
