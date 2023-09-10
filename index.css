@@ -108,12 +108,12 @@ body{
 @media screen and (max-width:576px ) {
 
     #box1,#box3{
-        transform: perspective(350px) rotateY(45deg) ;
-    
+        transform: perspective(350px) rotateY(35deg) ;
+         width: 90%;
      font-size: 35px;
     }
     #box1:hover,#box3:hover{
-        transform: perspective(250px) rotateY(45deg) ;
+        transform: perspective(250px) rotateY(35deg) ;
     
      font-size: 35px;
     }
@@ -121,13 +121,13 @@ body{
 
     
     #box2,#box4{
-        transform: perspective(350px) rotateY(-45deg) ;
-    
+        transform: perspective(350px) rotateY(-35deg) ;
+         width: 90%;
      font-size: 35px;
     }
 
     #box2:hover,#box4:hover{
-        transform: perspective(250px) rotateY(-45deg) ;
+        transform: perspective(250px) rotateY(-35deg) ;
     
      font-size: 35px;
     }
